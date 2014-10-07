@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>candle-wiki{{e.name}}</title>
+		<LINK REL=StyleSheet HREF="http://udacity-cs253.appspot.com/static/main.css" TYPE="text/css">
+	</head>
+	<body>
+		<h2><a href="/" class="main-title">candle-wiki</a><a href="{{e.name}}" class="main-title">{{e.name}} {{id}}</a></h2>
+		<div class = "login-area">
+			<a class ="login-link" href="/_edit{{e.name}}">edit</a>
+			|
+			<a class ="login-link" href="/_history{{e.name}}">history</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class ="login-link" href="/login">login</a>
+			|
+			<a class ="login-link" href="/signup">signup</a>
+		</div>
+		<div id ="content">
+			<div class ="post-heading">
+				<div class="post-date">{{e.created.strftime("%A, %d %B %Y, at %H:%M:%S %Z")}}</div>
+			</div>
+			<div id="post">{{e.content|safe}}</div>
+			<div class="age">{{age}}</div>
+
+		</div>
+
+	</body>
+</html>

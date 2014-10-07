@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>candle-wiki :: signup</title>
+		<LINK REL=StyleSheet HREF="http://udacity-cs253.appspot.com/static/main.css" TYPE="text/css">
+	</head>
+	<body>
+		<h2><a href="/" class="main-title">candle-wiki</a> signup</h2>
+		<form method="post">
+			<label>Username: <input type="text" name="username" value="{{username}}"></label> <span class="error">{{error_u}}</span>
+				<label>Password: <input type="password" name="password"></label> <span class="error">{{error_p}}</span>
+			<label>Verify: <input type="password" name="verify"></label>
+			<label>Email: <input type="text" name="email" value="{{email}}"></label> <span class="error">{{error_e}}</span>
+			<input type="submit">
+		</form>
+	</body>
+</html>
